@@ -1,16 +1,16 @@
 # NFC-Wallet-App
-Android-based NFC payment wallet simulation using Host Card Emulation (HCE), secure communication, encryption, HMAC verification, and tamper attack detection.
+Android-based NFC payment wallet simulation using Host Card Emulation, secure communication, encryption, HMAC verification, and tamper attack detection.
 
 # NFC Wallet App
 
 An Android NFC payment wallet prototype developed with Kotlin.
 
-The application simulates contactless payment transactions using Host Card Emulation (HCE) and demonstrates secure communication mechanisms such as encryption, HMAC verification, and tamper detection.
+The application simulates contactless payment transactions using Host Card Emulation and demonstrates secure communication mechanisms such as encryption, HMAC verification, and tamper detection.
 
 ## Features
 
 - NFC-based payment simulation
-- Host Card Emulation (HCE)
+- Host Card Emulation
 - CPA (Customer Payment Application) mode
 - PSA (Payment Service Application / Terminal) mode
 - Secure and insecure communication modes
