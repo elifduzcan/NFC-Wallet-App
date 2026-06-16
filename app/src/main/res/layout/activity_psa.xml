@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏪 PSA — Terminal"
+            android:textColor="#E6EDF3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#161B22"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Mod Seçimi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#161B22"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Güvenli Mod"
+                android:textColor="#E6EDF3"
+                android:textSize="15sp"/>
+
+            <Switch
+                android:id="@+id/swSecure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#58A6FF"
+                android:trackTint="#1F3A5F"/>
+        </LinearLayout>
+
+        <!-- Durum -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ GÜVENSİZ MOD — NFC bekleniyor..."
+            android:textColor="#F0883E"
+            android:textSize="14sp"
+            android:padding="14dp"
+            android:background="#1C1600"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- İşlem Sonucu Kartı -->
+        <LinearLayout
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#161B22"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ ACCEPTED"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="#2E7D32"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E6EDF3"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#E6EDF3"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvToken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#8B949E"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvTimestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#8B949E"
+                android:textSize="11sp"
+                android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <!-- Replay Attack -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#161B22"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔄 Replay Attack Testi"
+                android:textColor="#8B949E"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnReplay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="▶ Son İşlemi Tekrar Gönder"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6E40C9"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvReplayResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ℹ️ Önce bir NFC tap yapın."
+                android:textColor="#E6EDF3"
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:background="#21262D"/>
+
+            <!-- Performans Raporu Butonu -->
+            <Button
+                android:id="@+id/btnPerfReport"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="📊 Performans Raporu (Logcat)"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#0D419D"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Eavesdropping Logu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#161B22"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📡 Ham NFC Verisi (Eavesdropping)"
+                android:textColor="#8B949E"
+                android:textSize="12sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvRawPayload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NFC tap bekleniyor..."
+                android:textColor="#58A6FF"
+                android:textSize="10sp"
+                android:fontFamily="monospace"
+                android:padding="8dp"
+                android:background="#0D1117"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1117"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- Logo / Başlık -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💳"
+        android:textSize="64sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NFC Wallet"
+        android:textColor="#E6EDF3"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Güvenli NFC Ödeme Sistemi"
+        android:textColor="#8B949E"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- NFC Durum -->
+    <TextView
+        android:id="@+id/tvNfcStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NFC kontrol ediliyor..."
+        android:textColor="#58A6FF"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:background="#161B22"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- CPA Butonu -->
+    <Button
+        android:id="@+id/btnCpa"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="👤  CPA — Müşteri Rolü"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#238636"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- PSA Butonu -->
+    <Button
+        android:id="@+id/btnPsa"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="🏪  PSA — Terminal Rolü"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1F6FEB"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Her iki cihazda da aynı uygulama kullanılır"
+        android:textColor="#484F58"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
